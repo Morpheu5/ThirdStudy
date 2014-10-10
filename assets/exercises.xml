@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<scales>
+		<scale name="1MP">48,50,52,55,57,60</scale>
+		<scale name="4MP">48,50,53,55,57,60</scale>
+		<scale name="5MP">50,52,55,57,59,62</scale>
+		<scale name="mono_c">48</scale>
+		<scale name="mono_g">55</scale>
+		<scale name="bi_c">48,55</scale>
+		<scale name="bi_f">53,60</scale>
+		<scale name="dia_c">48,50,52,53,55,57,59,60</scale>
+	</scales>
+	<exercises>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,0,4,5,6,0,4" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,0,3,2,0,5,0,0" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,1,0,4,5,4,0" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="bi_f"   melody="1,0,2,1,2,0,1,0" />
+			<measure type="1" scale="bi_c"   melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="bi_c"   melody="1,0,0,1,0,0,2,0" />
+			<measure type="1" scale="bi_c"   melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="mono_c" melody="1,0,1,1,0,1,1,0" />
+			<measure type="1" scale="mono_c" melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="mono_c" melody="1,0,1,0,1,0,0,0" />
+			<measure type="1" scale="mono_c" melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,0,2,0,3,0,4,0" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,0,2,0,3,0,2,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,0,4,5,0,3,0" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,2,0,5,4,0,1,2" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,3,4,5,4,3,2" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,2,3,4,5,4,3,2" />
+		</exercise>
+		
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,3,4,5,4,3,2" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,2,3,4,5,4,3,2" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,3,0,3,4,5,6" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,2,3,0,4,5,2,1" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,0,2,0,4,0,6,3" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="1" scale="1MP"    melody="1,0,2,0,4,0,3,0" />
+		</exercise>
+		
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,1,0,3,0,0,6,0" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="4MP"    melody="4,4,0,3,1,0,2,0" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,3,4,5,4,3,2" />
+			<measure type="2" scale="4MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="5MP"    melody="1,3,4,3,2,3,4,3" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+		<exercise>
+			<measure type="0" scale="1MP"    melody="1,2,3,2,4,5,6,5" />
+			<measure type="2" scale="5MP"    melody="0,0,0,0,0,0,0,0" />
+			<measure type="2" scale="4MP"    melody="6,5,4,3,2,3,4,5" />
+			<measure type="1" scale="1MP"    melody="0,0,0,0,0,0,0,0" />
+		</exercise>
+	</exercises>
+</root>
