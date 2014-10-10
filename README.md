@@ -1,8 +1,6 @@
-SecondStudy-touch
-=================
+ThirdStudy
+==========
 
 Touch screen only version of my third study for my PhD.
 
-For when your supervisor says "'tis good stuff, but the
-hardware is not reliable: can you make it work on the
-other one?"
+This is based on my previous study's project at https://github.com/Morpheu5/SecondStudy-touch
