@@ -174,6 +174,7 @@ void ThirdStudy::MeasureWidget::tap(Vec2f p) {
 			ss << " -- play";
 		}
 	}
+	Logger::instance().log(ss.str());
 }
 
 void ThirdStudy::MeasureWidget::play() {
@@ -189,6 +190,8 @@ void ThirdStudy::MeasureWidget::play() {
 	_cue->setLoop(false);
 	
 	isPlaying = true;
+	
+	Logger::instance().log(stringstream() << "MeasureWidget::play -- id: " << _id);
 }
 
 void nop() { }
@@ -198,6 +201,8 @@ void ThirdStudy::MeasureWidget::stop() {
 	app::timeline().apply(&_cursorOffset, Vec2f(0.0f, 0.0f), MEASUREWIDGET_NOTELENGTH, EaseInOutSine());
 	_cue->create(nop);
 	isPlaying = false;
+	
+	Logger::instance().log(stringstream() << "MeasureWidget::stop -- id: " << _id);
 }
 
 void ThirdStudy::MeasureWidget::playNote(int n) {
@@ -221,6 +226,7 @@ void ThirdStudy::MeasureWidget::finishedPlaying() {
 	isPlaying = false;
 	TheApp *theApp = (TheApp *)App::get();
 	theApp->measureHasFinishedPlaying(_id);
+	Logger::instance().log(stringstream() << "MeasureWidget::finishedPlaying -- id: " << _id);
 }
 
 void ThirdStudy::MeasureWidget::moveBy(Vec2f v) {
@@ -235,16 +241,23 @@ void ThirdStudy::MeasureWidget::rotateBy(float a) {
     _angle += a;
 }
 
-void ThirdStudy::MeasureWidget::toggle(pair<int, int> note) {
+void ThirdStudy::MeasureWidget::toggle(pair<int, int> note, bool log) {
+	stringstream ss;
+	ss << "MeasureWidget::toggle id:" << _id << " -- pair: (" << note.first << ", " << note.second << ")";
 	if(note.first >= 0 && note.first < notes.size() && note.second >= 0 && note.second < notes[0].size()) {
 		if(notes[note.first][note.second]) {
 			notes[note.first][note.second] = false;
+			ss << " -- off";
 		} else {
 			for(auto a : notes[note.first]) {
 				a = false;
 			}
 			notes[note.first][note.second] = true;
+			ss << " -- on";
 		}
+	}
+	if(log) {
+		Logger::instance().log(ss.str());
 	}
 }
 

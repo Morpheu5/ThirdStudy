@@ -82,8 +82,7 @@ void ThirdStudy::TheApp::setup() {
 			mw->setMidiNotes(notes);
 			for(int i = 0; i < melody.size(); i++) {
 				// DAFUQ -3? FIXME
-				mw->toggle(pair<int, int>(i, notes.size() - melody[i]));
-//				mw->toggle(pair<int,int>(i,notes.size()-0));
+				mw->toggle(pair<int, int>(i, notes.size() - melody[i]), false);
 			}
 			exercise.push_back(mw);
 		}

@@ -58,7 +58,7 @@ namespace ThirdStudy {
 		const Rectf& inletIcon() const { return _inletIcon; }
 		const Rectf& outletIcon() const { return _outletIcon; }
 		
-		void toggle(pair<int, int> note);
+		void toggle(pair<int, int> note, bool log = true);
 		void processStroke(const TouchTrace &trace);
 		
 		void play();
