@@ -32,7 +32,7 @@ void ThirdStudy::TheApp::setup() {
 	_screenOffset = Vec2f(0.0f, 0.0f);
 	
 #if DEBUG==1
-	auto basepath = ci::fs::path("/Users/morpheu5/src/ThirdStudy");
+	auto basepath = getHomeDirectory()/"src/ThirdStudy";
 #else
 	auto basepath = getAppPath().remove_filename();
 #endif

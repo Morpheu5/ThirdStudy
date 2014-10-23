@@ -206,6 +206,10 @@ void ThirdStudy::MeasureWidget::stop() {
 }
 
 void ThirdStudy::MeasureWidget::playNote(int n) {
+	int playnote = getNote(n);
+	if(playnote < 40) {
+		return;
+	}
 	TheApp *theApp = (TheApp *)App::get();
 	osc::Message m;
 	m.setAddress("/playnote");
