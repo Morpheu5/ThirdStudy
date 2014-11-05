@@ -37,7 +37,7 @@
 using namespace std;
 using std::chrono::duration_cast;
 using std::chrono::microseconds;
-using std::chrono::steady_clock;
+using std::chrono::system_clock;
 
 class Logger {
 	string _filename;
@@ -61,7 +61,7 @@ public:
 	void log(string s) {
 		_logQueueMutex.lock();
 		
-		auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(steady_clock::now().time_since_epoch()).count();
+		auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(system_clock::now().time_since_epoch()).count();
 		
 		stringstream t("");
 		t << "[" << ms << "] " << s << endl;
