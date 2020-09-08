@@ -1,6 +1,8 @@
 ThirdStudy
 ==========
 
-Touch screen only version of my third study for my PhD.
+## A one-to-one exploration of melodic similarity and contrast on a digital tabletop
 
-This is based on my previous study's project at https://github.com/Morpheu5/SecondStudy-touch
+Software developed in support of my [PhD thesis](http://oro.open.ac.uk/45474/)
+
+This is based on a [previous version](https://github.com/Morpheu5/SecondStudy-touch).
